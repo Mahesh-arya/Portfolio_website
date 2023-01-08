@@ -1,0 +1,46 @@
+.experiance{
+   display: flex;
+   gap: 5rem;
+   justify-content: center;
+   align-items: center;
+   height: 30vh;
+   margin-bottom: 8rem;
+}
+
+.achievements{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center ;
+}
+
+.circle{
+   height: 4rem;
+   width: 4rem;
+   border-radius: 100%;
+   background: white;
+   position: relative;
+   display: flex;
+   align-items: center;
+   font-size: 1.5rem;
+   font-weight: bold;
+   justify-content: center;
+   margin-bottom: 2rem;
+
+}
+
+.circle::before{
+   border-radius: 100%;
+   content: '';
+   background-image: linear-gradient(to bottom,#87e6fb 0%,#ffc05c 100%);
+   top:-8px;
+   bottom: -8px;
+   left: -8px;
+   right: -8px;
+   position: absolute;
+   z-index: -1;
+   box-shadow: var(--boxShadow);
+}
+.achievements>:nth-child(2){
+   color: var(--orange);
+}
